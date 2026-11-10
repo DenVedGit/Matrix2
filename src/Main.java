@@ -39,17 +39,16 @@ public class Main {
                     rotatedColors[i][j] = colors[SIZE - i - 1][SIZE - j - 1];
                 }
             }
-        }
-        else if (grad == 270) {
+        } else if (grad == 270) {
             System.out.println("Матрица повернута на 270 градусов");
             for (int i = 0; i < SIZE; i++) {
                 for (int j = 0; j < SIZE; j++) {
                     rotatedColors[i][j] = colors[j][SIZE - i - 1];
                 }
             }
-        }
-        else {
+        } else {
             System.out.println("Неверное число");
+            return;
         }
         printMatrix(rotatedColors);
     }
